@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(void) {
+        int j, procurado, i, num_aleatorio;
+        srand(time(NULL));
+        num_aleatorio = rand() % 100;
+
+    printf("Vamos jogar um jogo, adivinhe o numero: \n");
+     do {
+        printf("Digite um numero: ");
+        scanf("%i", &procurado);
+
+        if (procurado > num_aleatorio) {
+            printf("Muito alto! Tente novamente.\n");
+        } else if (procurado < num_aleatorio) {
+            printf("Muito baixo! Tente novamente.\n");
+        } else {
+            printf("Parabéns! Você acertou o numero %i.\n", num_aleatorio);
+        }
+    } while (procurado != num_aleatorio);
+
+    return 0;
+}
