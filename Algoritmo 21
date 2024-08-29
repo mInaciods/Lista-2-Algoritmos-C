@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+    int num1, i, j, temp, procurado;
+
+    printf("Insira o tamanho do vetor: ");
+    scanf("%i", &num1);
+    
+    int vetor[num1];
+    printf("Insira os elementos do vetor:\n");
+    for (i = 0; i < num1; i++) {
+        scanf("%i", &vetor[i]);
+    }
+    printf("Digite o numero procurado:");
+    scanf("%i", &procurado);
+    
+    for (i = 0; i < num1; i++) {
+            if(vetor[i] == procurado){
+                procurado = i + 1;
+                break;
+            }
+            }
+    if(procurado != 0)
+        printf("Valor encontrado na posicao: %i\n", procurado);
+    else
+       printf("Valor nao encontrado\n");
+
+    return 0;
+}
