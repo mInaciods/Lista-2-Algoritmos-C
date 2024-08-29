@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int num1, i, total;
+
+int main(void) {
+  printf("Escreva um numero:");
+  scanf("%i", &num1);
+ for(i = 0; i <= num1; i++){
+   total = total + i;
+ }
+  printf("%i", total);
+  return 0;
+}
