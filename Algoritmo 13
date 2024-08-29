@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int num1, i, somador, vale, total;
+somador = 0;
+vale = 1;
+  
+int main(void) {
+  printf("Escreva um numero:");
+  scanf("%i", &num1);
+ for(i = 0; i < num1; i++){
+    printf("%i\n", somador);
+    total = somador + vale;
+    somador = vale; 
+    vale = total;
+ }
+  return 0;
+}
