@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+
+int num1, num2, i, contador;
+int main(void) {
+  printf("Escreva um numero:");
+  scanf("%i", &num1);
+  printf("Escreva outro numero:");
+  scanf("%i", &num2);
+  for (i = 1; i <= num1 && i <= num2; i++){
+    if (num1 % i == 0 && num2 % i == 0){
+      contador =  i;
+    }
+  }
+  printf("O maior divisor comum entre os dois numeros e: %i", contador);
+  return 0;
+}
