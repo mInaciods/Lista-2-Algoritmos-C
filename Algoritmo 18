@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+
+int num1, num2, i, contador;
+int main(void) {
+  contador = 0;
+  printf("Escreva um numero:");
+  scanf("%i", &num1);
+  printf("Escreva outro numero:");
+  scanf("%i", &num2);
+  for (i = 1; contador == 0; i++){
+    if (i % num1 == 0 && i % num2 == 0){
+      contador =  i;
+    }
+  }
+  printf("O minimo multiplo comum entre os dois sera: %i", contador);
+  return 0;
+}
