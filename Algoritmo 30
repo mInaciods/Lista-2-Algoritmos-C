@@ -1,1 +1,14 @@
+    #include <stdio.h>
+    #include <stdlib.h>
 
+    int main(void) {
+        char converte[100];
+
+        printf("Insira:");
+        fgets(converte,100,stdin);
+
+        int x = atoi(converte);
+        printf("%d\n", x);
+
+        return 0;
+    }
