@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+    int i, m, n; 
+    char letras[100];
+    int contador = 0;
+    
+    printf("Insira o elemento:\n");
+    scanf("%s", letras);
+    m = strlen(letras);
+
+    for(i = 0, i; i < m; i++){
+        if(letras[i] == 'a' || letras[i] == 'e' || letras[i] == 'i' || letras[i] == 'o' || letras[i] == 'u'){
+            contador++;
+        }
+    }
+
+    printf("A contagem de vogais e: %d\n", contador);
+
+    return 0;
+}
